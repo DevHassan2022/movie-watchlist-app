@@ -1,0 +1,507 @@
+/* ******************************************************
+ *                  Common Styles
+ * *****************************************************/
+
+/* ********************* Layout ********************* */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: "Inter", sans-serif;
+    padding: 0;
+}
+
+html, body,
+.movie__data h4,
+p,
+.movie-list__empty-text {
+    margin: 0;
+}
+
+.app-container,
+.movie,
+.divider {
+    margin: auto;
+}
+
+.app-container {
+    max-width: 550px;
+    height: 779px;
+    overflow: hidden;
+    background: #FFF;
+}
+
+.movie-list__empty,
+.movie-list__placeholder {
+    text-align: center;
+}
+
+.app-header__search,
+.app-header__search-button {
+    border: 1px solid #D1D5DB;
+}
+
+.app-header__search-input,
+.divider,
+.app-header__content {
+    width: 100%;
+}
+
+.movie-list__populated-state,
+.populated-watchlist {
+    display: none;
+}
+
+/* ********************* Typography ********************* */
+.app-header__search-input,
+.app-header__search-button {
+    font-family: inherit;
+}
+
+.app-header__subtitle,
+.app-header__search-input,
+.app-header__search-button,
+.movie__plot,
+.fa-solid.fa-circle-plus,
+.placeholder,
+.movie-list__placeholder,
+.watchlist-header__subtitle a {
+    font-size: 0.875rem;
+}
+
+.movie-list__empty-text,
+.app-header__title {
+    user-select: none;
+}
+
+.app-header__search-button,
+.movie__title {
+    font-weight: 500;
+}
+
+.app-header__search-button,
+.movie__button,
+.read-more,
+.read-less {
+    cursor: pointer;
+}
+
+.read-more:hover,
+.read-less:hover {
+   font-size: 1em;
+   text-decoration: underline;
+}
+
+.read-more:active,
+.read-less:active {
+  font-size: .8em;
+}
+
+.app-header__search-input {
+    cursor: text;
+}
+
+.app-header,
+.app-header__subtitle a,
+.watchlist-header__subtitle a {
+    color: #fff;
+}
+
+.movie__rating,
+.movie__info-actions {
+    color: #111827;
+}
+
+.movie__rating,
+.movie__info-actions {
+    font-size: 0.75rem;
+}
+
+.movie-list__empty-text,
+.movie__title {
+    font-size: 1.125rem;
+}
+
+/* Utility Classes */
+.flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.border-none {
+    border: none;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.line-height {
+    line-height: 20px;   
+}
+
+.text-gray {
+    color: #272727;
+}
+
+.text-xs {
+    font-size: 0.75rem;
+}
+
+.mr-movie-btn {
+    margin-right: 0.417em;
+}
+
+/* ******************************************************
+ *                  Individual Styles
+ * *****************************************************/
+
+/* ********************* Typography ********************* */
+
+/* Header Typography */
+.app-header__title {
+    font-size: 2.6875rem;
+    line-height: 23.775px; 
+    letter-spacing: -1.926px;
+}
+
+.app-header__subtitle,
+.placeholder,
+.movie-list__empty-text,
+.watchlist-header__subtitle a,
+.movie-list__placeholder {
+    font-weight: 700;
+}
+
+.app-header__subtitle a,
+.watchlist-header__subtitle a {
+    text-decoration: none;
+}
+
+/* Movie List Section Typography */
+.movie-list__empty i {
+     font-size:  3.8281em;
+}
+
+/* ********************* Layout ********************* */
+
+/* Header Layout */
+.app-header {
+    position: relative;
+    height: 208px;
+    padding: 0 2.875em 0 2.625em; 
+    background: #0E0E0E url('../images/header.png') no-repeat center / cover;
+}
+
+.app-header__content {  
+    justify-content: space-between;
+}
+
+.app-header__search {
+    top: 189px; 
+    width: 84%;
+    border-radius: 6px;
+    background:  #FFF;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+.app-header__search i {
+    left: 13px; 
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888; 
+}
+
+.app-header__search-input {
+    padding: 0.6429em 0.9286em;
+    text-indent: 1.5em;
+    color:  #6B7280;
+}
+
+
+.app-header__search-button {
+    width: 120px;
+    padding: 0.643em 0.786em 0.643em 1.214em;
+    color:  #374151;
+    background-color: #F9FAFB;
+    border-radius: 0px 6px 6px 0px;
+}
+
+
+/* Movie List Section Layout */
+.movie-list {
+    height: 571px;
+}
+
+.movie-list__empty {
+    height: fit-content;
+    margin-top: 12.0625em;
+    color: #DFDDDD;
+}
+
+.movie-list__placeholder{
+    gap: 0.5em;
+    color: #363636;
+}
+
+.movie-list__populated-state {
+    width: 550px;
+    height: 536.411px;
+    margin-top: 3.3125em;
+}
+
+.movie {
+    width: 462px;
+    height: 147.411px;
+    gap: 1.3125em;
+}
+
+.divider {
+    max-width: 461px;
+    height: 1.5px;
+    background-color: #E5E7EB;
+    margin-top: 1.2863em;
+    margin-bottom: 1.3125em;
+}
+
+.movie-list__populated-state .divider:nth-child(4) {
+    margin-top: 1.7869em;
+    margin-bottom: 1.5em;
+}
+
+.movie__title-wrapper {
+    margin-top: 0.9375em;
+    margin-bottom: 0.6875em;
+}
+
+.movie__title {
+    color: #000;
+}
+
+.movie:nth-child(1) .movie__title {
+    margin-right: 0.4444em;
+}
+
+.movie:nth-child(3) .movie__title {
+    margin-right: 0.3889em;
+}
+
+.movie:nth-child(5) .movie__title {
+    margin-right: 0.2778em;
+}
+
+.movie__star-icon {
+    width: 15px;
+    height: 15px;
+}
+
+.movie__rating {
+    margin-left: 0.417em;
+}
+
+.movie__poster {
+    width: 99px;
+    height: 147.411px;
+    border-radius: 2.329px;
+    background: lightgray 50% / cover no-repeat;
+}
+
+.movie__info-actions {
+    margin-bottom: 0.667em;
+    height: 20px;
+}
+
+.movie:nth-child(1) .movie__runtime {
+    margin-right: calc(1.583em - 1.5%);
+}
+
+.movie:nth-child(3) .movie__runtime {
+    margin-right: calc(1.333em - 1.5%);
+}
+
+.movie:nth-child(5) .movie__runtime {
+    margin-right: calc(2em - 1.5%);
+}
+
+.movie__genre {
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.movie:nth-child(1) .movie__genre {
+    margin-right: calc(1em - 4.5%);
+}
+
+.movie:nth-child(3) .movie__genre {
+    margin-right: calc(1.75em - 3.5%);
+}
+
+.movie:nth-child(5) .movie__genre {
+    margin-right: calc(1.6667em - 3.5%);
+}
+
+ .movie__button {
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    margin: -0.0833em 0.4167em 0 1.6667em;
+}
+
+.movie__plot {
+    width: 342px;
+    color: #6B7280;
+    display: inline;
+}
+
+/* Watchlist Layout */
+.watchlist.app-header {
+    padding-left: 2.625em;
+    padding-right: 2.875em;
+}
+
+.empty-watchlist {
+    margin-top: 11.3125em;    
+}
+
+.movie-list__populated-watchlist {
+     width: 464px;
+     height: 546px;
+     margin-top: 2.1875em;
+}
+
+.movie-list__populated-watchlist .movie:nth-child(1) .movie__title {
+    margin-right: 0.4375em;
+}
+
+.movie-list__populated-watchlist .movie:nth-child(3) .movie__title {
+    margin-right: 0.3125em;
+}
+
+.movie-list__populated-watchlist .movie:nth-child(5) .movie__title {
+    margin-right: 0.25em;
+}
+
+.movie-list__populated-watchlist .movie:nth-child(1) .movie__genre {
+    margin-right: calc(1.25em - 0.5%);
+}
+
+.movie-list__populated-watchlist .movie:nth-child(3) .movie__genre {
+    margin-right: calc(1.5em - 2.5%);
+}
+
+.movie-list__populated-watchlist .movie:nth-child(5) .movie__genre {
+    margin-right: calc(1.667em - 3.5%);
+}
+.movie-list__populated-watchlist .divider:nth-child(2) {
+    margin-top:  2.099375em;
+    margin-bottom: 1.3125em;
+}
+
+/* Watchlist Typograpghy */
+.app-header__title.watchlist {
+    font-weight: 800;
+}
+
+/* ******************************************************
+ *              Hover, Focus & Active Styles
+ * *****************************************************/
+
+ /* App Header Hover and Focus Effects */
+.app-header__subtitle a:hover,
+.watchlist-header__subtitle a:hover {
+    color: #0E0E0E;
+    background: #fff;
+    padding: .5em;
+    text-transform: uppercase;
+    border-radius: 6px;
+    transform: scale(1.1);
+}
+
+.app-header__subtitle a:active,
+.watchlist-header__subtitle a:active {
+     background: #0E0E0E;
+     color: #fff;
+     text-transform: capitalize;
+     transform: scale(0.9);
+}
+
+/* Search Input Hover Effects And Focus Effects */
+.app-header__search-input:hover {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    background-color: #f0f0f0;
+}
+
+.app-header__search-input:focus {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    outline: none;
+}
+
+.app-header__search-input:hover,
+.app-header__search-input:focus {
+    border: 1px solid #ccc;
+}
+
+.app-header__search-button:hover,
+.app-header__search-button:active {
+    color: #F9FAFB;
+    background-color: #374151;;
+  }
+
+  .app-header__search-button:active {
+    transform: scale(1.1);
+  }
+
+  /* Movie Add/Remove Button Hover and Focus Effects */
+.movie__button:hover {
+    transform: scale(1.1);
+}
+
+.movie__button:active {
+    transform: scale(0.9);
+}
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
